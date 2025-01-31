@@ -6,8 +6,13 @@ import './App.css'
 function App() {
   let [counter,setCounter] = useState(15)
   //let counter=5
+
+  //Interview question
   const addValue=()=>{
-    if(counter<20) setCounter(counter+1)
+    setCounter((prevCounter)=> prevCounter+1 )    //useState send signals in batches
+    setCounter((prevCounter) => prevCounter+1 )
+    setCounter((prevCounter) => prevCounter+1)
+    setCounter((prevCounter) => prevCounter+1)
     //console.log("Value added", Math.random());
     //counter=counter+1
     
